@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Chart from './components/ChartContainer/ChartContainer';
+import { Main } from './components/Main/Main';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='container'>
+      <Main />
+    </div>
   </React.StrictMode>
 );
 
